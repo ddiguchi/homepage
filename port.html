@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ポートフォリオ概要</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: lightgray;
+        }
+
+        .starter-template {
+            padding: 40px 40px;
+            background-color: white;
+        }
+
+        .color-talk {
+            color: lightseagreen;
+        }
+
+        .color-wrench {
+            color: steelblue;
+        }
+
+        .color-heart {
+            color: plum;
+        }
+
+        .icon-size {
+            font-size: 200%;
+        }
+        table {
+            border-collapse: collapse;
+            border: solid 2px black;/*表全体を線で囲う*/
+        }
+        table th, table td {
+            border: solid 1px;  
+            border: dashed 1px orange;/**/
+            padding: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">ガネーシャ</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ルーティン管理アプリ</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">List</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template">
+            <h1>夢を叶えるリスト</h1>
+            <p class="lead">夢をかなえるゾウ。のガネーシャの名言集を元に目標達成に向けてのルーティンを管理するアプリです。 </p>
+            <div style="text-align: center">
+                <img src="https://2.bp.blogspot.com/--Rrg-z8lqQo/WD_cQvp_sLI/AAAAAAABABo/pwLNpoH00iMwenRS0yLRpCDveJlXszOewCLcB/s800/hindu_ganesa_ganesya.png" width="300" height="300">
+            </div>
+            <div class="row text-center">
+                <h2 id="works">こんな人にオススメ！</h2>
+                <div class="col-sm-4">
+                    <h3 class="color-talk"><img src="https://2.bp.blogspot.com/-PSZUd8pUKAg/WQvu2NGlp7I/AAAAAAABECU/yMn3ODkBygs2dBQ4w_kAGLrI-TwkerB3gCLcB/s800/book_hirameki_keihatsu_woman.png" width="100" height="100"></span><br>自己啓発</h3>
+                    <p>自分を変えたい！<br>そんなあなたに向けての<br>自己啓発アプリです。</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="color-wrench"><img src="https://3.bp.blogspot.com/-XJrKocsLwIk/VfS6gOoJvJI/AAAAAAAAxRM/oaow0Sye3PM/s800/mokuhyou_tassei_man.png" width="100" height="100"></span><br>目標達成</h3>
+                    <p>偉人達による<br>人生を変えるためのアクションプランを<br>多数掲載しています。</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="color-heart"><img src="https://3.bp.blogspot.com/-0PSkBmN0xoA/WIiB-0uYJzI/AAAAAAABBVs/YNDasC-1jVgbRpXjlyFybk24uB_Ts7F4gCLcB/s800/happy_schoolboy.png" width="100" height="100"></span><br>自己分析</h3>
+                    <p>目標達成率を一目で確認<br>難易度の設定や<br>マイルールも追加。</p>
+                </div>
+            </div>
+            <hr>
+
+            <h2 id="works">追加したい機能</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>名言集、優先度、難易度リスト</h3>
+                    <p>名言集を優先度や難易度で管理、達成度を一目で確認</p>
+                    <h3>カレンダー機能</h3>
+                    <p>継続出来ているかを確認、また達成度に応じて色が変わる。</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://illustimage.com/photo/dl/1438.png?20210106" class="img-responsive">
+                </div>
+            </div>
+            <hr>
+
+            <h2 id="skills">サンプル画面（仮）</h2>
+            <body>
+                <!-- 日付入力 -->
+                <input type="date"></input>
+              </body>
+            <h3 >ガネーシャの課題</h3>
+            <table  border="1">
+             <tr>
+                <th>ID</th>
+                <th>ガネーシャの課題</th>
+                <th>難易度</th>
+                <th>優先度</th>
+                <th>達成した？</th>
+             </tr>
+             <tr>
+                <td>1</td><td>靴を磨く</td><td>☆</td><td>☆</td><td><input type="checkbox" name="area[]" value="達成"> 達成済み</td>
+             </tr>
+             <tr>
+                <td>2</td><td>会った人を笑わせる</td><td>☆☆</td><td>☆☆</td><td><input type="checkbox" name="area[]" value="達成"> 達成済み</td>
+             </tr>
+             <tr>
+                <td>3</td><td>やらずに後悔していることをやる</td><td>☆☆☆</td><td>☆☆☆</td><td><input type="checkbox" name="area[]" value="達成"> 達成済み</td>
+             </tr>
+            </table>
+
+            <div class="row starter-template">
+                <html lang="ja">
+  <head>
+    <title>test</title><button>更新</button>
+  </head>
+
+</html>
+                <h3 >今日のポイント</h3>
+                <p>0pt</p>
+            <a class="btn btn-primary" href="#">Topに戻る</a>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
